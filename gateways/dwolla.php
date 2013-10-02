@@ -36,9 +36,7 @@ function dwolla_config() {
 }
 
 function dwolla_link($params) {
-
-
-
+	
 	$data = array(
 
 		/***********************************************************************
