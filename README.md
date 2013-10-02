@@ -6,9 +6,7 @@ We were suprised to find out that no good, open source gateway existed in WHMCS 
 ##Installation
 1. Upload the gateways/dwolla.php file to whmcs/modules/gateways/
 2. Upload the callback/dwolla.php file in the callback folder to modules/gateways/callback/
-3. Log into the WHMCS admin area, and activate the Dwolla gateway
-4. Set the Callback URL in the Dwolla web interface to
-  https://example.com/whmcs/modules/gateways/callback/dwolla.php
+3. Log into the WHMCS admin area, activate the Dwolla gateway, and fill in the information.
 5. Profit?
 
 ##Notice and Stuff
