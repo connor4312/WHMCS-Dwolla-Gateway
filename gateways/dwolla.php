@@ -31,7 +31,12 @@ function dwolla_config() {
 			'FriendlyName' => 'Callback URL',
 			'Type' => 'text',
 			'Description' => 'Something like /whmcs/modules/gateways/callback/dwolla.php. If empty, will be generated automatically.'
-		)
+		),
+		'test' => array(
+			'FriendlyName' => 'Testmode',
+			'Type' => 'yesno',
+			'Description' => 'Flag if purchase order is for testing purposes only. Does not affect account balances and no emails are sent. The transaction ID will always be 1.'
+		),
 	);
 }
 
@@ -59,7 +64,7 @@ function dwolla_link($params) {
 		'signature' => hash_hmac('sha1', $key . '&' . $timestamp . '&' . $orderID, $params['consumerSecret']),
 		'destinationId' => $params['destinationId'],
 		'allowFundingSources' => $params['allowFundingSources'],
-		'callback' => empty($params['callback']) ? $params['systemurl'] . '/modules/gateways/callback/dwolla.php' : $params['callback']
+		'redirect' => empty($params['callback']) ? $params['systemurl'] . '/modules/gateways/callback/dwolla.php' : $params['callback']
 	);
 
 
