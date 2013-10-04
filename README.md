@@ -11,3 +11,5 @@ We were suprised to find out that no good, open source gateway existed in WHMCS 
 
 ##Notice and Stuff
 This code was written by [Connor Peet](http://connorpeet.com) and is copyright 2013 by Ferrous Networks Ltd. It is distributed under the terms found in the LICENSE file, the CC-BY-SA 3.0 license ([summary here](http://creativecommons.org/licenses/by-sa/3.0/deed.en_US)).
+
+Essentially, you **can** use it commercially in your own billing system without any links or other such nonsense, but if you want to distribute the code by itself or as part of another package, credit must be noted and that package must be licensed under this same license.
