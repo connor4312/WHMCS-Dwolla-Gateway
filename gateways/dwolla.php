@@ -74,7 +74,7 @@ function dwolla_link($params) {
 
 	$out = '<form method="POST" action="https://www.dwolla.com/payment/pay">';
 	foreach ($data as $key => $value) {
-		$out .= '<input type="hidden" name="' . $value . '" value ="' . $value .'" />';
+		$out .= '<input type="hidden" name="' . $key . '" value ="' . $value .'" />';
 	}
 	$out .= '<input type="submit" value="Pay Now" class="btn btn-primary"/></form>';
 
